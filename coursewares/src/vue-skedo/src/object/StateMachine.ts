@@ -59,9 +59,10 @@ export class StateMachine<
 		const [fn, nextS] = transfer
 		fn(...data)
 		this.state = nextS
-
+    // 当前状态有action
 		// <auto>
 		// while(this.dispatch(0 as A, ...data));
+    // TODO 这句有什么意义 
 		while(this.dispatch("<auto>" as A, ...data));
 		return true
 	}

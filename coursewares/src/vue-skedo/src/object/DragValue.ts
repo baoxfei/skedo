@@ -18,7 +18,7 @@ export class DragValue extends Emiter<number>{
   update(e : DragEvent){
     this.diffX = e.clientX - this.startX
     this.diffY = e.clientY - this.startY
-    this.emit(Topics.DragDataUpdated)
+    // this.emit(Topics.DragDataUpdated)
   }
 
   getDiffX(){

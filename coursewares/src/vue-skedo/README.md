@@ -25,3 +25,18 @@ Run `Volar: Switch TS Plugin on/off` from VSCode command palette.
 3. Open `src/main.ts` in VSCode
 4. Open the VSCode command palette
 5. Search and run "Select TypeScript version" -> "Use workspace version"
+
+
+### 实现思路
+
+  1. ItemList/metas: 展现物料 实际的 Component props
+  2. render 根据物料render Node
+  3. 交互过程
+
+   - 拖 dragStart ItemList  dragOver  drop Panel  使用状态机来控制节点的变化
+   - 移动 dragStart  dragEnd Panel
+   - 通过render 生成的 Draggable
+
+
+## 完成后的思考
+
